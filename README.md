@@ -23,7 +23,7 @@
 
 1. **nvm use 16** - Switch to Node 16 (nvm install 16.5.1 if not installed)
 2. **npm install** - Install all node_modules for the GCF
-3. npx @google-cloud/functions-framework --target=run** - Serve the example GCF locally
+3. npx @google-cloud/functions-framework --target=run --port=8080** - Serve the example GCF locally
 4. **http://localhost:8080/** - Visit the locally served GCF
 
 ##### *A note on easily moving ready components from local to the cloud:
