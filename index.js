@@ -39,11 +39,11 @@ functions.http('run', async (_req, res) => {
   const crawlerRunURL = 'https://crawler-v3j6hryt5q-wn.a.run.app';
   const auth = new GoogleAuth();
   const client = await auth.getIdTokenClient(crawlerRunURL);
-  const res = await client.request({
+  const response = await client.request({
     url: crawlerRunURL,
     method: 'POST',
     data: { elements }
   });
-  console.info(res.data);
-  res.send(res.data);
+  console.info(response.data);
+  res.send(response.data);
 });
